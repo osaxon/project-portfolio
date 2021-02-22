@@ -7,10 +7,62 @@ body {
     padding: 0;
 }
 
+.main-header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 8px;
+}
+
+.main-nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.main-nav a {
+    padding: 8px;
+}
+
 .hero {
     background-image: url("../assets/boat.jpg");
+    background-position: 0, -50px;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     height: 20vw;
+    width: 100%;
 }
+
+.content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+.flex-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item:first-child {
+    width: 75%;
+    flex-basis: 100%;
+}
+
+.content > div {
+    flex: 0 0 77%;
+}
+
+.sub-header {
+    font-size: 3rem;
+    font-weight: bolder;
+}
+
+.a {
+    background-image: url("../assets/surf.jpg");
+}
+
